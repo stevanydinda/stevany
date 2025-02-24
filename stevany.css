@@ -5,9 +5,70 @@
     text-decoration: none;
     border: none;
     outline: none;
+    background-color: rgb(49, 62, 88);
 
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 62, 88);
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgb(49, 62, 88);
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(49, 62, 88);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(251, 251, 251);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(49, 62, 88);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 nav ul{
     list-style: none;
     display: flex;  
@@ -297,8 +358,6 @@ footer p{
     color: white;
 }
 
-
-
 .poster-img img {
     width: 80rem;
     border-radius: 8px;
@@ -313,3 +372,11 @@ footer p{
     width: 100rem;
 }
 
+.kampung-img{
+    color:white;
+    height: auto;
+    object-fit: contain;
+
+}
+    
+    
